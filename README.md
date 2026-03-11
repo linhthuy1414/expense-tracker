@@ -30,4 +30,4 @@ Một dự án web nhỏ giúp theo dõi thu chi hằng ngày ngay trên trình 
 
 ## Ảnh minh họa
 
-Ông chủ có thể mở dự án trên trình duyệt rồi chụp màn hình, sau đó chèn ảnh vào đây để repo nhìn đẹp hơn.
+<img width="1280" height="693" alt="image" src="https://github.com/user-attachments/assets/bab19f7c-96dc-4801-891c-31731ad21a34" />
