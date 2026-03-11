@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý chi tiêu cá nhân</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="card hero">
+        <p class="tag">Dự án nhỏ cho GitHub</p>
+        <h1>Quản lý chi tiêu cá nhân</h1>
+        <p class="subtitle">
+          Theo dõi thu chi hằng ngày, xem số dư hiện tại và lưu dữ liệu ngay trên trình duyệt.
+        </p>
+      </section>
+
+      <section class="grid">
+        <div class="card summary">
+          <h2>Tổng quan</h2>
+          <div class="summary-box">
+            <div>
+              <span>Số dư</span>
+              <strong id="balance">0 ₫</strong>
+            </div>
+            <div>
+              <span>Tổng thu</span>
+              <strong class="income" id="total-income">0 ₫</strong>
+            </div>
+            <div>
+              <span>Tổng chi</span>
+              <strong class="expense" id="total-expense">0 ₫</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Thêm giao dịch</h2>
+          <form id="transaction-form" class="form">
+            <label>
+              Nội dung
+              <input type="text" id="description" placeholder="Ví dụ: Ăn sáng" required />
+            </label>
+
+            <label>
+              Số tiền
+              <input type="number" id="amount" placeholder="Ví dụ: 50000" min="1" required />
+            </label>
+
+            <label>
+              Loại giao dịch
+              <select id="type">
+                <option value="income">Thu</option>
+                <option value="expense">Chi</option>
+              </select>
+            </label>
+
+            <button type="submit">Lưu giao dịch</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="list-header">
+          <h2>Danh sách giao dịch</h2>
+          <button id="clear-all" class="ghost">Xóa tất cả</button>
+        </div>
+        <ul id="transaction-list" class="transaction-list"></ul>
+        <p id="empty-state" class="empty-state">Chưa có giao dịch nào.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
